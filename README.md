@@ -1,0 +1,3 @@
+# Overview
+
+We have a dice set which works as a count down timer for christmas.  However, the choice of numbers on the dice don't allow for all days to be represented.  (The set we have only has one dice with '0', so '07' can't be represented).  After working out a solution by hand which works, I was curious to know how many solutions existed.  This code iterates through all possible dice combinations to see how many would work.
