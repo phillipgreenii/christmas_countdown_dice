@@ -79,11 +79,13 @@ def test_score_dice():
 # test_score_dice()
 
 def main(): 
+    print("Generating Christmas Dates")
     christmas_dates = list(generate_christmas_dates())
     # christmas_dates = list(generate_test_dates())
     # print(christmas_dates)
     works = {}
     count = 0
+    print("Generating Dice Compinations")
     for dice in generate_dice():
         score = score_dice(christmas_dates, dice)
         count += 1
@@ -92,9 +94,11 @@ def main():
         # print(score)
         # break
 
-    print(f"{len(works)}/{count}")
+    print(f"Found {len(works)}/{count}")
     for w in works.keys():
         print(w)
         
 
-main()
+if __name__ == '__main__':
+    main()
+
